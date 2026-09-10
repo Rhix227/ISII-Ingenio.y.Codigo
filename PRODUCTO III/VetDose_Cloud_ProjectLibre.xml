@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project xmlns="http://schemas.microsoft.com/project">
+    <SaveVersion>14</SaveVersion>
+    <Name>VetDose Cloud - Cronograma</Name>
+    <Title>Cronograma Maestro WBS/Gantt y Red PERT/CPM - VetDose Cloud</Title>
+    <Subject>Ingeniería del Software II - Producto III (Ejercicio 3)</Subject>
+    <Category>Gestión y Planificación de Software</Category>
+    <Company>Ingenio y Código (UNEG)</Company>
+    <Author>Brayan Carreño (C.I. 32.015.527)</Author>
+    <CreationDate>2026-09-08T08:00:00</CreationDate>
+    <StartDate>2026-09-15T08:00:00</StartDate>
+    <FinishDate>2027-01-04T17:00:00</FinishDate>
+    <ScheduleFromStart>1</ScheduleFromStart>
+    <CurrentDate>2026-09-15T08:00:00</CurrentDate>
+    <CalendarUID>1</CalendarUID>
+    <DefaultStartTime>08:00:00</DefaultStartTime>
+    <DefaultFinishTime>17:00:00</DefaultFinishTime>
+    <MinutesPerDay>480</MinutesPerDay>
+    <MinutesPerWeek>2400</MinutesPerWeek>
+    <DaysPerMonth>20</DaysPerMonth>
+    <DefaultTaskType>0</DefaultTaskType>
+    <DefaultFixedCostAccrual>3</DefaultFixedCostAccrual>
+    <DefaultStandardRate>20</DefaultStandardRate>
+    <DefaultOvertimeRate>30</DefaultOvertimeRate>
+    <DurationFormat>7</DurationFormat>
+    <WorkFormat>2</WorkFormat>
+    <EditableActualCosts>0</EditableActualCosts>
+    <HonorConstraints>0</HonorConstraints>
+    <Calendars>
+        <Calendar>
+            <UID>1</UID>
+            <Name>Standard</Name>
+            <IsBaseCalendar>1</IsBaseCalendar>
+            <BaseCalendarUID>-1</BaseCalendarUID>
+            <WeekDays>
+                <WeekDay><DayType>1</DayType><DayWorking>0</DayWorking></WeekDay>
+                <WeekDay>
+                    <DayType>2</DayType><DayWorking>1</DayWorking>
+                    <WorkingTimes>
+                        <WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime>
+                        <WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime>
+                    </WorkingTimes>
+                </WeekDay>
+                <WeekDay>
+                    <DayType>3</DayType><DayWorking>1</DayWorking>
+                    <WorkingTimes>
+                        <WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime>
+                        <WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime>
+                    </WorkingTimes>
+                </WeekDay>
+                <WeekDay>
+                    <DayType>4</DayType><DayWorking>1</DayWorking>
+                    <WorkingTimes>
+                        <WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime>
+                        <WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime>
+                    </WorkingTimes>
+                </WeekDay>
+                <WeekDay>
+                    <DayType>5</DayType><DayWorking>1</DayWorking>
+                    <WorkingTimes>
+                        <WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime>
+                        <WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime>
+                    </WorkingTimes>
+                </WeekDay>
+                <WeekDay>
+                    <DayType>6</DayType><DayWorking>1</DayWorking>
+                    <WorkingTimes>
+                        <WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime>
+                        <WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime>
+                    </WorkingTimes>
+                </WeekDay>
+                <WeekDay><DayType>7</DayType><DayWorking>0</DayWorking></WeekDay>
+            </WeekDays>
+        </Calendar>
+    </Calendars>
+    <Tasks>
+        <!-- TAREA RAÍZ -->
+        <Task>
+            <UID>0</UID><ID>0</ID><Name>PROYECTO VETDOSE CLOUD</Name>
+            <Active>1</Active><Manual>0</Manual><Type>1</Type><IsNull>0</IsNull>
+            <OutlineLevel>0</OutlineLevel><OutlineNumber>0</OutlineNumber><WBS>0</WBS>
+            <Start>2026-09-15T08:00:00</Start><Finish>2027-01-04T17:00:00</Finish>
+            <Duration>PT640H0M0S</Duration><Summary>1</Summary><Critical>1</Critical>
+        </Task>
+
+        <!-- FASE 1.0 -->
+        <Task>
+            <UID>1</UID><ID>1</ID><Name>1.0 Gestión y Gobernanza</Name>
+            <Active>1</Active><Manual>0</Manual><Type>1</Type><IsNull>0</IsNull>
+            <OutlineLevel>1</OutlineLevel><OutlineNumber>1</OutlineNumber><WBS>1.0</WBS>
+            <Start>2026-09-15T08:00:00</Start><Finish>2026-09-24T17:00:00</Finish>
+            <Duration>PT64H0M0S</Duration><Summary>1</Summary><Critical>1</Critical>
+        </Task>
+        <Task>
+            <UID>2</UID><ID>2</ID><Name>1.1 Project Charter y Formalización</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>1.1</OutlineNumber><WBS>1.1</WBS>
+            <Start>2026-09-15T08:00:00</Start><Finish>2026-09-17T17:00:00</Finish>
+            <Duration>PT24H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+        </Task>
+        <Task>
+            <UID>3</UID><ID>3</ID><Name>1.2 Plan de Gestión y Cronograma WBS</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>1.2</OutlineNumber><WBS>1.2</WBS>
+            <Start>2026-09-18T08:00:00</Start><Finish>2026-09-22T17:00:00</Finish>
+            <Duration>PT24H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>2</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>4</UID><ID>4</ID><Name>1.3 Matriz de Riesgos y Gobernanza</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>1.3</OutlineNumber><WBS>1.3</WBS>
+            <Start>2026-09-23T08:00:00</Start><Finish>2026-09-24T17:00:00</Finish>
+            <Duration>PT16H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>3</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+
+        <!-- FASE 2.0 -->
+        <Task>
+            <UID>5</UID><ID>5</ID><Name>2.0 Análisis de Requisitos del Sistema</Name>
+            <Active>1</Active><Manual>0</Manual><Type>1</Type><IsNull>0</IsNull>
+            <OutlineLevel>1</OutlineLevel><OutlineNumber>2</OutlineNumber><WBS>2.0</WBS>
+            <Start>2026-09-25T08:00:00</Start><Finish>2026-10-12T17:00:00</Finish>
+            <Duration>PT96H0M0S</Duration><Summary>1</Summary><Critical>1</Critical>
+        </Task>
+        <Task>
+            <UID>6</UID><ID>6</ID><Name>2.1 Especificación ERS (ISO/IEC/IEEE 29148)</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>2.1</OutlineNumber><WBS>2.1</WBS>
+            <Start>2026-09-25T08:00:00</Start><Finish>2026-10-01T17:00:00</Finish>
+            <Duration>PT40H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>4</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>7</UID><ID>7</ID><Name>2.2 Modelado de Casos de Uso Clínicos</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>2.2</OutlineNumber><WBS>2.2</WBS>
+            <Start>2026-10-02T08:00:00</Start><Finish>2026-10-07T17:00:00</Finish>
+            <Duration>PT32H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>6</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>8</UID><ID>8</ID><Name>2.3 Matriz de Trazabilidad de Requisitos</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>2.3</OutlineNumber><WBS>2.3</WBS>
+            <Start>2026-10-08T08:00:00</Start><Finish>2026-10-12T17:00:00</Finish>
+            <Duration>PT24H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>7</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+
+        <!-- FASE 3.0 -->
+        <Task>
+            <UID>9</UID><ID>9</ID><Name>3.0 Diseño de Arquitectura y Lógica de Dosificación</Name>
+            <Active>1</Active><Manual>0</Manual><Type>1</Type><IsNull>0</IsNull>
+            <OutlineLevel>1</OutlineLevel><OutlineNumber>3</OutlineNumber><WBS>3.0</WBS>
+            <Start>2026-10-13T08:00:00</Start><Finish>2026-10-30T17:00:00</Finish>
+            <Duration>PT112H0M0S</Duration><Summary>1</Summary><Critical>1</Critical>
+        </Task>
+        <Task>
+            <UID>10</UID><ID>10</ID><Name>3.1 Arquitectura C4 y Modelo Cloud</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>3.1</OutlineNumber><WBS>3.1</WBS>
+            <Start>2026-10-13T08:00:00</Start><Finish>2026-10-16T17:00:00</Finish>
+            <Duration>PT32H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>8</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>11</UID><ID>11</ID><Name>3.2 Esquema DB Vademécum Clínico</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>3.2</OutlineNumber><WBS>3.2</WBS>
+            <Start>2026-10-19T08:00:00</Start><Finish>2026-10-22T17:00:00</Finish>
+            <Duration>PT32H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>10</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>12</UID><ID>12</ID><Name>3.3 Algoritmo Paramétrico de Dosificación (WBS 3.3.2)</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>3.3</OutlineNumber><WBS>3.3</WBS>
+            <Start>2026-10-23T08:00:00</Start><Finish>2026-10-30T17:00:00</Finish>
+            <Duration>PT48H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>11</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+
+        <!-- FASE 4.0 -->
+        <Task>
+            <UID>13</UID><ID>13</ID><Name>4.0 Construcción Fullstack del Software</Name>
+            <Active>1</Active><Manual>0</Manual><Type>1</Type><IsNull>0</IsNull>
+            <OutlineLevel>1</OutlineLevel><OutlineNumber>4</OutlineNumber><WBS>4.0</WBS>
+            <Start>2026-11-02T08:00:00</Start><Finish>2026-12-07T17:00:00</Finish>
+            <Duration>PT208H0M0S</Duration><Summary>1</Summary><Critical>1</Critical>
+        </Task>
+        <Task>
+            <UID>14</UID><ID>14</ID><Name>4.1 Motor Backend en API REST (WBS 4.1.4)</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>4.1</OutlineNumber><WBS>4.1</WBS>
+            <Start>2026-11-02T08:00:00</Start><Finish>2026-11-19T17:00:00</Finish>
+            <Duration>PT112H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>12</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>15</UID><ID>15</ID><Name>4.2 Portal Web Clínico y Gestión de Pacientes</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>4.2</OutlineNumber><WBS>4.2</WBS>
+            <Start>2026-11-20T08:00:00</Start><Finish>2026-12-07T17:00:00</Finish>
+            <Duration>PT96H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>14</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>16</UID><ID>16</ID><Name>4.3 Módulo de Recordatorios por WhatsApp</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>4.3</OutlineNumber><WBS>4.3</WBS>
+            <Start>2026-11-20T08:00:00</Start><Finish>2026-12-01T17:00:00</Finish>
+            <Duration>PT64H0M0S</Duration><Summary>0</Summary><Critical>0</Critical>
+            <PredecessorLink><PredecessorUID>14</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+
+        <!-- FASE 5.0 -->
+        <Task>
+            <UID>17</UID><ID>17</ID><Name>5.0 Pruebas y Control de Calidad (QA)</Name>
+            <Active>1</Active><Manual>0</Manual><Type>1</Type><IsNull>0</IsNull>
+            <OutlineLevel>1</OutlineLevel><OutlineNumber>5</OutlineNumber><WBS>5.0</WBS>
+            <Start>2026-12-08T08:00:00</Start><Finish>2026-12-23T17:00:00</Finish>
+            <Duration>PT96H0M0S</Duration><Summary>1</Summary><Critical>1</Critical>
+        </Task>
+        <Task>
+            <UID>18</UID><ID>18</ID><Name>5.1 Suite de Pruebas Automatizadas TDD (WBS 5.1.1)</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>5.1</OutlineNumber><WBS>5.1</WBS>
+            <Start>2026-12-08T08:00:00</Start><Finish>2026-12-14T17:00:00</Finish>
+            <Duration>PT40H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>15</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>19</UID><ID>19</ID><Name>5.2 Pruebas de Carga, Estrés y Latencia (&lt;500ms)</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>5.2</OutlineNumber><WBS>5.2</WBS>
+            <Start>2026-12-15T08:00:00</Start><Finish>2026-12-18T17:00:00</Finish>
+            <Duration>PT32H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>18</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>20</UID><ID>20</ID><Name>5.3 Auditoría de Seguridad y Validación Clínica Externa</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>5.3</OutlineNumber><WBS>5.3</WBS>
+            <Start>2026-12-21T08:00:00</Start><Finish>2026-12-23T17:00:00</Finish>
+            <Duration>PT24H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>19</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+
+        <!-- FASE 6.0 -->
+        <Task>
+            <UID>21</UID><ID>21</ID><Name>6.0 Despliegue e Implantación</Name>
+            <Active>1</Active><Manual>0</Manual><Type>1</Type><IsNull>0</IsNull>
+            <OutlineLevel>1</OutlineLevel><OutlineNumber>6</OutlineNumber><WBS>6.0</WBS>
+            <Start>2026-12-24T08:00:00</Start><Finish>2027-01-04T17:00:00</Finish>
+            <Duration>PT64H0M0S</Duration><Summary>1</Summary><Critical>1</Critical>
+        </Task>
+        <Task>
+            <UID>22</UID><ID>22</ID><Name>6.1 Pipeline CI/CD Automatizado en AWS</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>6.1</OutlineNumber><WBS>6.1</WBS>
+            <Start>2026-12-24T08:00:00</Start><Finish>2026-12-28T17:00:00</Finish>
+            <Duration>PT24H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>20</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>23</UID><ID>23</ID><Name>6.2 Pruebas Piloto de Aceptación UAT</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>6.2</OutlineNumber><WBS>6.2</WBS>
+            <Start>2026-12-29T08:00:00</Start><Finish>2026-12-31T17:00:00</Finish>
+            <Duration>PT24H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>22</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+        <Task>
+            <UID>24</UID><ID>24</ID><Name>6.3 Puesta en Producción (Cloud MVP) y Manuales</Name>
+            <Active>1</Active><Manual>0</Manual><Type>0</Type><IsNull>0</IsNull>
+            <OutlineLevel>2</OutlineLevel><OutlineNumber>6.3</OutlineNumber><WBS>6.3</WBS>
+            <Start>2027-01-01T08:00:00</Start><Finish>2027-01-04T17:00:00</Finish>
+            <Duration>PT16H0M0S</Duration><Summary>0</Summary><Critical>1</Critical>
+            <PredecessorLink><PredecessorUID>23</PredecessorUID><Type>1</Type><CrossProject>0</CrossProject></PredecessorLink>
+        </Task>
+    </Tasks>
+</Project>
