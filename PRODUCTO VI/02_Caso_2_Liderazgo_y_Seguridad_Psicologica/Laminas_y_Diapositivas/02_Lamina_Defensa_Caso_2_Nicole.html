@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Defensa Caso 2 - Nicole García</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      background-color: #080d1a;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 40%),
+        linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #e2e8f0;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 10px;
+      position: relative;
+    }
+    .header-left {
+      max-width: 840px;
+    }
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      color: #a855f7;
+      margin-bottom: 4px;
+    }
+    .header-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #a855f7;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 8px #a855f7;
+    }
+    h1 {
+      font-size: 25px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+    h1 span {
+      color: #34d399;
+    }
+    .subtitle {
+      font-size: 12.5px;
+      color: #94a3b8;
+      margin-top: 3px;
+    }
+    .subtitle strong {
+      color: #f1f5f9;
+    }
+
+    .webcam-guide {
+      font-size: 11px;
+      color: #64748b;
+      border: 1px dashed rgba(148, 163, 184, 0.3);
+      padding: 4px 12px;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.4);
+      margin-top: 2px;
+    }
+
+    /* 4-column Grid */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr 0.95fr 1.05fr;
+      gap: 14px;
+      margin-top: 12px;
+      flex: 1;
+      margin-bottom: 10px;
+    }
+
+    .col-card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    .col-title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .c1-title { color: #38bdf8; border-color: rgba(56, 189, 248, 0.25); }
+    .c2-title { color: #34d399; border-color: rgba(52, 211, 153, 0.25); }
+    .c3-title { color: #fbbf24; border-color: rgba(251, 191, 36, 0.25); }
+    .c4-title { color: #c084fc; border-color: rgba(192, 132, 252, 0.25); }
+
+    .section-box {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+    }
+    .section-box:last-child {
+      margin-bottom: 0;
+    }
+    .box-heading {
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .box-heading .badge {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .badge-blue { background: rgba(56, 189, 248, 0.2); color: #38bdf8; }
+    .badge-green { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+    .badge-amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+    .badge-purple { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
+
+    .box-desc {
+      font-size: 10px;
+      color: #94a3b8;
+      line-height: 1.35;
+    }
+    .box-desc strong {
+      color: #e2e8f0;
+    }
+
+    /* Conventional Comment Items */
+    .cc-item {
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 3px solid #34d399;
+      border-radius: 4px;
+      padding: 4px 7px;
+      margin-bottom: 5px;
+    }
+    .cc-item:last-child {
+      margin-bottom: 0;
+    }
+    .cc-tag {
+      font-family: monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #34d399;
+      display: inline-block;
+    }
+    .cc-tag.issue { color: #f87171; }
+    .cc-tag.question { color: #38bdf8; }
+    .cc-tag.suggestion { color: #fbbf24; }
+    .cc-text {
+      font-size: 9px;
+      color: #cbd5e1;
+      margin-top: 1px;
+      line-height: 1.25;
+    }
+
+    /* Retro Steps */
+    .retro-phase {
+      background: rgba(15, 23, 42, 0.7);
+      border-left: 3px solid #c084fc;
+      border-radius: 4px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+    }
+    .retro-phase:last-child {
+      margin-bottom: 0;
+    }
+    .retro-phase-title {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #c084fc;
+      display: flex;
+      justify-content: space-between;
+    }
+    .retro-phase-desc {
+      font-size: 9.5px;
+      color: #94a3b8;
+      margin-top: 2px;
+      line-height: 1.25;
+    }
+
+    /* Footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 8px;
+      font-size: 11px;
+      color: #64748b;
+    }
+    .footer strong {
+      color: #94a3b8;
+    }
+    .footer-tags {
+      display: flex;
+      gap: 12px;
+    }
+    .footer-tag {
+      color: #34d399;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-badge">UNEG • Ingeniería de Software II • Unidad VI: Liderazgo & Equipos</div>
+      <h1>Reestructuración de Pull Requests <span>& Retrospectiva Segura</span></h1>
+      <div class="subtitle">Defensa Oral: <strong>Nicole García</strong> | Caso 2 (Parte B): Conventional Comments, Linters en CI y Reconstrucción de Confianza</div>
+    </div>
+    <div class="webcam-guide">
+      Entrega: 23/09/2026
+    </div>
+  </div>
+
+  <!-- 4-Column Grid -->
+  <div class="main-grid">
+
+    <!-- Column 1: Automatización en CI -->
+    <div class="col-card">
+      <div class="col-title c1-title">
+        <span>🤖 1. Despersonalización (CI)</span>
+      </div>
+
+      <div class="section-box">
+        <div class="box-heading" style="color: #38bdf8;">
+          Linters en Pre-commit <span class="badge badge-blue">Regla</span>
+        </div>
+        <div class="box-desc">
+          Formato, sintaxis y sangrías evaluados automáticamente por <strong>Prettier</strong> y <strong>ESLint</strong>. Rechazo algorítmico sin intervención humana.
+        </div>
+      </div>
+
+      <div class="section-box" style="margin-top: auto;">
+        <div class="box-heading" style="color: #38bdf8;">
+          SAST & SonarQube <span class="badge badge-blue">Quality Gate</span>
+        </div>
+        <div class="box-desc">
+          Análisis estático de code smells y complejidad ciclomática.<br>
+          <strong style="color: #67e8f9;">Axioma:</strong> <em>«Las máquinas revisan el estilo; los humanos debaten la arquitectura.»</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 2: Conventional Comments -->
+    <div class="col-card">
+      <div class="col-title c2-title">
+        <span>🏷️ 2. Conventional Comments</span>
+      </div>
+
+      <div class="cc-item" style="border-left-color: #34d399;">
+        <span class="cc-tag">praise:</span>
+        <div class="cc-text">«Excelente desacoplamiento en este adapter. Muy limpio.»</div>
+      </div>
+
+      <div class="cc-item" style="border-left-color: #fbbf24;">
+        <span class="cc-tag suggestion">suggestion (no-bloq):</span>
+        <div class="cc-text">«Usa Factory aquí para evitar el switch. Te dejo este snippet...»</div>
+      </div>
+
+      <div class="cc-item" style="border-left-color: #f87171;">
+        <span class="cc-tag issue">issue (bloqueante):</span>
+        <div class="cc-text">«Query SQL en bucle (N+1). Causará saturación de BD.»</div>
+      </div>
+
+      <div class="cc-item" style="border-left-color: #38bdf8;">
+        <span class="cc-tag question">question:</span>
+        <div class="cc-text">«¿Por qué procesamiento síncrono en lugar de cola de eventos?»</div>
+      </div>
+
+      <div class="cc-item" style="border-left-color: #94a3b8; margin-top: auto;">
+        <span class="cc-tag" style="color: #94a3b8;">nitpick (pulido):</span>
+        <div class="cc-text">«Detalle no bloqueante de nombres o comentarios.»</div>
+      </div>
+    </div>
+
+    <!-- Column 3: Código de Conducta en PRs -->
+    <div class="col-card">
+      <div class="col-title c3-title">
+        <span>📜 3. Protocolo de Revisión</span>
+      </div>
+
+      <div class="section-box">
+        <div class="box-heading" style="color: #fbbf24;">
+          Criticar Código, no Personas <span class="badge badge-amber">Norma 1</span>
+        </div>
+        <div class="box-desc">
+          Prohibido el uso de sarcasmo o descalificaciones. Toda crítica debe ser técnica, pedagógica y objetiva.
+        </div>
+      </div>
+
+      <div class="section-box">
+        <div class="box-heading" style="color: #fbbf24;">
+          Alternativa Obligatoria <span class="badge badge-amber">Norma 2</span>
+        </div>
+        <div class="box-desc">
+          Quien marque un defecto está obligado a sugerir una solución viable o referencia técnica de diseño.
+        </div>
+      </div>
+
+      <div class="section-box" style="margin-top: auto;">
+        <div class="box-heading" style="color: #fbbf24;">
+          Micro-PRs & Agilidad <span class="badge badge-amber">Norma 3</span>
+        </div>
+        <div class="box-desc">
+          PRs pequeños (&lt; 400 líneas) revisados en menos de 4 horas para retroalimentación rápida y continua.
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 4: Dinámica de Retrospectiva -->
+    <div class="col-card">
+      <div class="col-title c4-title">
+        <span>🎯 4. Retrospectiva Segura</span>
+      </div>
+
+      <div class="retro-phase">
+        <div class="retro-phase-title">Fase 1: Safety Check <span>10 min</span></div>
+        <div class="retro-phase-desc">
+          Votación anónima (1 al 5) para medir el nivel de seguridad psicológica antes de abrir debate.
+        </div>
+      </div>
+
+      <div class="retro-phase">
+        <div class="retro-phase-title">Fase 2: Kudo Cards <span>35 min</span></div>
+        <div class="retro-phase-desc">
+          Reconocimiento cruzado obligatorio. El arquitecto valida los aportes de los juniors.
+        </div>
+      </div>
+
+      <div class="retro-phase">
+        <div class="retro-phase-title">Fase 3: Working Agreement <span>15 min</span></div>
+        <div class="retro-phase-desc">
+          Co-creación y firma de los acuerdos de convivencia y mentoría técnica del equipo.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer">
+    <div>Presentadora: <strong>Nicole García</strong> | Caso 2 (Parte B) | Equipo: Ingenio y Código</div>
+    <div class="footer-tags">
+      <span class="footer-tag">Conventional Comments</span>
+      <span class="footer-tag">Safety Check (Derby & Larsen)</span>
+      <span class="footer-tag">CI Quality Gates</span>
+      <span>PRODUCTO VI</span>
+    </div>
+  </div>
+
+</body>
+</html>
